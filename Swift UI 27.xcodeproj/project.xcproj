@@ -10,6 +10,15 @@
       "Base",
     ],
   },
+  "packages": [
+    {
+      "kind": "remote",
+      "repository": "https://github.com/apple/swift-collections.git",
+      "version": {
+        "up-to-next-major-version": "1.7.5",
+      },
+    },
+  ],
   "files": [
     { "kind": "folder", "path": "Swift UI 27", "target-membership": [ "Swift UI 27" ] },
     {
@@ -31,6 +40,57 @@
         "frameworks",
         "resources",
       ],
+      "package-product-members": [
+        {
+          "package": "swift-collections",
+          "product-name": "BasicContainers",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "BitCollections",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "Collections",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "ContainersPreview",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "DequeModule",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "HashTreeCollections",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "HeapModule",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "OrderedCollections",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "SortedCollections",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "SpanPreview",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "TrailingElementsModule",
+          "build-phase": { "build-phase": "frameworks" },
+        }, {
+          "package": "swift-collections",
+          "product-name": "_RopeModule",
+          "build-phase": { "build-phase": "frameworks" },
+        },
+      ],
       "build-settings": {
         "CODE_SIGN_STYLE": "Automatic",
         "CURRENT_PROJECT_VERSION": "1",
@@ -48,8 +108,10 @@
         "INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]": "UIStatusBarStyleDefault",
         "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad": "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
         "INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone": "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight",
+        "IPHONEOS_DEPLOYMENT_TARGET": "27.0",
         "LD_RUNPATH_SEARCH_PATHS": "@executable_path/Frameworks",
         "LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]": "@executable_path/../Frameworks",
+        "MACOSX_DEPLOYMENT_TARGET": "27.0",
         "MARKETING_VERSION": "1.0",
         "PRODUCT_BUNDLE_IDENTIFIER": "devplaceholder.$(PROJECT_UNIQUE_VALUE:identifier).$(PRODUCT_NAME:rfc1034identifier)",
         "PRODUCT_NAME": "$(TARGET_NAME)",
@@ -63,6 +125,7 @@
         "SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY": "YES",
         "SWIFT_VERSION": "5.0",
         "TARGETED_DEVICE_FAMILY": "1,2,7",
+        "XROS_DEPLOYMENT_TARGET": "27.0",
       },
     },
   ],
